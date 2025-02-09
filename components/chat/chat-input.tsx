@@ -86,10 +86,13 @@ export const ChatInput = ({ apiUrl, query, name, type }: ChatInputProps) => {
                     placeholder={`Your message ${type === "conversation" ? name : "#" + name}`}
                     {...field}
                   />
-                  <div className="absolute top-7 right-8">
+                  <div className="absolute top-7 right-16">
                     <EmojiPicker 
                       onChange={(emoji: string) => field.onChange(`${field.value} ${emoji}`)}
                     />
+                  </div>
+                  <div className="absolute top-7 right-8">
+                    <button>Send</button>
                   </div>
                 </div>
               </FormControl>
