@@ -1,28 +1,27 @@
-# TeamX Chat
+# 🚀 TeamX Chat
 
-TeamX Chat is a full-featured real-time chat application built to enhance team collaboration. This full-stack project is developed using **Next.js 13**, **Socket.io**, **Prisma**, **Tailwind CSS**, and **MySQL**. With advanced features such as real-time messaging, 1:1 video calls, and server customization, TeamX Chat provides an all-in-one platform for efficient communication.
+TeamX Chat is a full-featured real-time chat application built to enhance team collaboration. This full-stack project is developed using **Next.js 13**, **Socket.io**, **Prisma**, **Tailwind CSS**, and **MySQL**.
 
-## Features
+## 🌟 Features
 
-- **Real-time messaging**: Send and receive messages instantly using Socket.io.
-- **Send attachments**: Attach files to your messages using UploadThing.
-- **Edit and delete messages**: Edit or delete messages in real-time for all participants.
-- **Audio/Video channels**: Create and join text, audio, and video call channels.
-- **1:1 messaging**: Direct conversations between team members.
-- **1:1 video calls**: Secure and real-time video calls between members.
-- **Member management**: Role management (Guest / Moderator), kicking members, and more.
-- **Invite system**: Generate unique invite links and manage team invitations.
-- **Infinite message loading**: Load older messages in batches of 10 using tanstack/query.
-- **Server creation and customization**: Personalize and create custom servers for teams.
-- **Beautiful UI**: Fully responsive design with TailwindCSS and ShadcnUI.
-- **Light/Dark mode**: Toggle between light and dark themes.
-- **WebSocket fallback**: Fallback to polling with alerts if WebSocket connection fails.
-- **ORM with Prisma**: Efficient database queries using Prisma ORM.
-- **MySQL Database**: Powered by Planetscale's scalable MySQL instance.
-- **Authentication**: Clerk provides secure user authentication and management.
+- **💬 Real-time messaging**: Send and receive messages instantly using Socket.io.
+- **📎 Send attachments**: Attach files to your messages using UploadThing.
+- **✏️ Edit and delete messages**: Edit or delete messages in real-time for all participants.
+- **🎥 Audio/Video channels**: Create and join text, audio, and video call channels.
+- **🗨️ 1:1 messaging**: Direct conversations between team members.
+- **📹 1:1 video calls**: Secure and real-time video calls between members.
+- **👥 Member management**: Role management (Guest / Moderator), kicking members, and more.
+- **🔗 Invite system**: Generate unique invite links and manage team invitations.
+- **🔄 Infinite message loading**: Load older messages in batches of 10 using tanstack/query.
+- **🛠️ Server creation and customization**: Personalize and create custom servers for teams.
+- **🎨 Beautiful UI**: Fully responsive design with TailwindCSS and ShadcnUI.
+- **🌗 Light/Dark mode**: Toggle between light and dark themes.
+- **🛡️ WebSocket fallback**: Fallback to polling with alerts if WebSocket connection fails.
+- **🔍 ORM with Prisma**: Efficient database queries using Prisma ORM.
+- **💾 MySQL Database**: Powered by Planetscale's scalable MySQL instance.
+- **🔐 Authentication**: Clerk provides secure user authentication and management.
 
-
-## Tech Stack
+## 🛠️ Tech Stack
 
 - **Next.js 13**: For server-side rendering and static generation.
 - **Socket.io**: For real-time WebSocket communication.
@@ -33,7 +32,7 @@ TeamX Chat is a full-featured real-time chat application built to enhance team c
 - **UploadThing**: For handling file attachments.
 - **LiveKit**: For real-time audio and video communication.
 
-## Installation and Setup
+## ⚙️ Installation and Setup
 
 ### Prerequisites
 
@@ -100,7 +99,7 @@ npm run dev
 
 This will run the application on `http://localhost:3000`.
 
-## Available Commands
+## 📜 Available Commands
 
 You can run the following commands using `npm run [command]`:
 
@@ -110,7 +109,7 @@ You can run the following commands using `npm run [command]`:
 | `build` | Build the application for production. |
 | `start` | Start the production server. |
 
-## Deployment
+## 🚀 Deployment
 
 To deploy the app, you can use platforms like **Vercel** or **Netlify**. Ensure that all environment variables are set correctly in your production environment.
 
@@ -121,7 +120,7 @@ For deploying with Vercel, follow these steps:
 3. Configure your environment variables in Vercel.
 4. Deploy your project.
 
-## Contributing
+## 🤝 Contributing
 
 We welcome contributions to improve this project. To contribute:
 
