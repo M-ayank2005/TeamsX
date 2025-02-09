@@ -27,7 +27,7 @@ export const ChatHeader = ({serverId, name, type, imageUrl}: ChatHeaderProps) =>
           className="w-8 h-8 md:w-8 md:h-8 mr-2"
         />
       )}
-      <p className="font-semibold text-md text-sky-500">
+      <p className="font-semibold text-md text-green-600">
         {name}
       </p>
       <div className="ml-auto flex items-center">

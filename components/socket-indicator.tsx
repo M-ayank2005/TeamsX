@@ -18,9 +18,9 @@ export const SocketIndicator = () => {
   return (
     <Badge
       variant="outline"
-      className="bg-emerald-500 text-white border-2 border-none"
+      className="bg-emerald-500 text-white p-1 rounded-2xl border-none animate-blink"
     >
-      Online
+      Live
     </Badge>
   );
 };

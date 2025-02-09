@@ -30,7 +30,7 @@ export const NavigationSidebar = async () => {
       <NavigationLogo />
       <NavigationAction />
       
-      <Separator className="h-[2px] bg-zinc-300 dark:bg-zinc-700 rounded-md w-10 mx-auto opacity-50" />
+      <Separator className="h-[2px] bg-gray-100 dark:bg-zinc-700 rounded-md w-10 mx-auto opacity-50" />
       
       <ScrollArea className="flex-1 w-full">
         <div className="px-1">

@@ -37,7 +37,7 @@ const roleIconMap = {
   [MemberRole.GUEST]: (
     <User
       fill="currentColor"
-      className="h-6 w-6 mr-2 text-pink-500 bg-blue-200 rounded p-[0.1rem]"
+      className="h-6 w-6 mr-2 text-pink-500 bg-green-200 rounded p-[0.1rem]"
     />
   ),
 };
@@ -92,7 +92,7 @@ export const ServerSidebar = async ({ serverId }: ServerSideProps) => {
   )?.role;
 
   return (
-    <div className="flex flex-col w-full h-full text-primary dark:bg-[#2b2d31] bg-[#fff0f8]">
+    <div className="flex flex-col w-full h-full rounded-md text-primary dark:bg-[#2b2d31] bg-green-300 bg-opacity-80">
       <ServerHeader server={server} role={role} />
       <ScrollArea className="flex-1 px-3">
         <div className="mt-2">

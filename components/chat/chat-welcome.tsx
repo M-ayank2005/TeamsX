@@ -11,13 +11,13 @@ export const ChatWelcome = ({name, type}: ChatWelcomeProps) => {
   return (
     <div className="space-y-2 px-4 mb-4">
       {type === "channel" && (
-        <div className="w-[75px] h-[75px] rounded-full bg-sky-500 dark:bg-sky-700 flex items-center justify-center">
+        <div className="w-[75px] h-[75px] rounded-full bg-green-600 dark:bg-sky-700 flex items-center justify-center">
           <Hash className="h-12 w-12 text-white dark:text-zinc-700"/>          
         </div>
       )}
       <p className="text-xl md:text-3xl font-bold ">
         {type === "channel" ? "Welcome to " : ""}
-        <span className="text-sky-500">
+        <span className="text-green-600">
           #{name}
         </span>
       </p>

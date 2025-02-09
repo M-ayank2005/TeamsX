@@ -69,12 +69,16 @@ module.exports = {
           "0%": { transform: "translateX(-100%)" },
           "50%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(100%)" }
+        },
+        "blink": {
+          "50%": { opacity: "0" }
         }
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "loading-bar": "loading-bar 2s infinite",
+        "blink": "blink 1s infinite"
       },
     },
   },

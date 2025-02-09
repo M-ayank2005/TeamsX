@@ -248,7 +248,7 @@ export const ChatItem = ({
                           <div className="relative w-full">
                             <Input 
                             disabled={isLoading}
-                            className="p-2 bg-sky-200/90
+                            className="p-2 bg-green-200/90
                             dark:bg-zinc-700/75 border-none border-0
                             focus-visible:ring-0
                             focus-visible:ring-offset-0 text-zinc-600

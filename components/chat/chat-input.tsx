@@ -71,7 +71,7 @@ export const ChatInput = ({ apiUrl, query, name, type }: ChatInputProps) => {
                     type="button" 
                     onClick={() => onOpen("messageFile", { apiUrl, query })} 
                     className="absolute top-7 left-8 h-[24px] w-[24px]
-                    bg-sky-500 dark:bg-sky-400 hover:bg-sky-600
+                    bg-blue-500 dark:bg-sky-400 hover:bg-sky-600
                     dark:hover:bg-sky-300 transition rounded-full p-1 flex
                     items-center justify-center"
                   >
@@ -79,21 +79,27 @@ export const ChatInput = ({ apiUrl, query, name, type }: ChatInputProps) => {
                   </button>
                   <Input 
                     disabled={isLoading}
-                    className="px-14 py-6 bg-sky-200/90
-                    dark:bg-zinc-700/75 border-0 dark:border-[1px] dark:border-sky-500
+                    className="px-14 py-6 bg-green-100/70
+                    dark:bg-zinc-700/75 border-[1px] border-green-400 dark:border-[1px] dark:border-sky-500
                     focus-visible:ring-0 focus-visible:ring-offset-0
                     text-zinc-600 dark:text-zinc-200"
                     placeholder={`Your message ${type === "conversation" ? name : "#" + name}`}
                     {...field}
                   />
-                  <div className="absolute top-7 right-16">
+                    <div className="absolute top-7 right-24">
                     <EmojiPicker 
                       onChange={(emoji: string) => field.onChange(`${field.value} ${emoji}`)}
                     />
-                  </div>
-                  <div className="absolute top-7 right-8">
-                    <button>Send</button>
-                  </div>
+                    </div>
+                    <div className="absolute top-6 right-8">
+                    <button 
+                      type="submit"
+                      disabled={isLoading}
+                      className="h-auto w-auto bg-green-500 dark:bg-sky-400 hover:bg-sky-600 dark:hover:bg-sky-300 transition rounded-md p-1 px-2 flex items-center justify-center"
+                    >
+                      Send
+                    </button>
+                    </div>
                 </div>
               </FormControl>
             </FormItem>

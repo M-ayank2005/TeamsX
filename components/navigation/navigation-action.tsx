@@ -19,10 +19,10 @@ export const NavigationAction = () => {
             className="flex mx-3 h-[48px] w-[48px] rounded-[24px] 
         group-hover:rounded-[16px] transition-all
         overflow-hidden items-center justify-center
-        bg-background dark:bg-neutral-700 group-hover:bg-sky-500"
+        bg-background dark:bg-neutral-700 group-hover:bg-green-600"
           >
             <Plus
-              className="group-hover:text-white transition text-sky-500"
+              className="group-hover:text-white transition text-green-600"
               size={24}
             />
           </div>

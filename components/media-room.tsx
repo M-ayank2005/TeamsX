@@ -36,8 +36,8 @@ export const MediaRoom = ({ chatId, video, audio }: MediaRoomProps) => {
   if (token === "") {
     return (
       <div className="flex flex-col flex-1 justify-center items-center">
-        <Loader2 className="animate-spin w-8 h-8 text-sky-500 my-4" />
-        <p className="text-sm text-sky-500">Loading...</p>
+        <Loader2 className="animate-spin w-8 h-8 text-green-600 my-4" />
+        <p className="text-sm text-green-600">Loading...</p>
       </div>
     )
   }
