@@ -1,10 +1,11 @@
 {
-  "name": "TeamsX",
+  "name": "teamsx",
   "author": "TeamX",
   "license": "MIT",
   "description": "Teams Chat .",
   "version": "0.1.0",
   "private": true,
+  "packageManager": "npm@8.19.4", 
   "scripts": {
     "dev": "next dev",
     "build": "next build",
