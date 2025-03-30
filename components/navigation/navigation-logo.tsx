@@ -10,7 +10,7 @@ export const NavigationLogo = () => {
         overflow-hidden items-center justify-center
         bg-background dark:bg-neutral-700 group-hover:bg-green-600"
         >
-          <span className="text-green-600 group-hover:text-white transition text-s font-semibold">
+          <span className="text-green-600 group-hover:text-white transition text-s font-bold">
             TX
           </span>
         </div>

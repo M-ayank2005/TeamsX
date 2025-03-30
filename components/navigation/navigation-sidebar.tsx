@@ -26,18 +26,18 @@ export const NavigationSidebar = async () => {
   })
 
   return (
-    <div className="space-y-4 flex flex-col items-center h-full text-primary w-full dark:bg-[#1e1f22] bg-[#e3edf7] py-3">
+    <div className="space-y-4 flex flex-col items-center h-full text-primary w-full dark:bg-[#1e1f22] bg-[#e3edf7] py-4 shadow-md">
       <NavigationLogo />
       <NavigationAction />
       
-      <Separator className="h-[2px] bg-gray-100 dark:bg-zinc-700 rounded-md w-10 mx-auto opacity-50" />
+      <Separator className="h-[2px] bg-gray-300 dark:bg-zinc-600 rounded-full w-12 mx-auto opacity-70" />
       
-      <ScrollArea className="flex-1 w-full">
-        <div className="px-1">
+      <ScrollArea className="flex-1 w-full px-2">
+        <div className="space-y-2">
           {servers.map((server) => (
             <div 
               key={server.id} 
-              className="mb-4 transition-all duration-200 hover:translate-x-1"
+              className="transition-all duration-300 hover:translate-y-1 hover:scale-100"
             >
               <NavigationItem
                 id={server.id}
@@ -49,15 +49,15 @@ export const NavigationSidebar = async () => {
         </div>
       </ScrollArea>
 
-      <div className="pb-3 mt-auto flex items-center flex-col gap-y-4">
-        <div className="hover:opacity-80 transition-opacity duration-200">
+      <div className="pb-3 mt-auto flex items-center flex-col gap-y-5 pt-2  border-gray-700 dark:border-zinc-700 w-full">
+        <div className="rounded-lg p-1.5 hover:bg-gray-200 dark:hover:bg-zinc-800 transition-all duration-200">
           <ModeToggle />
         </div>
         <UserButton
           afterSignOutUrl="/"
           appearance={{
             elements: {
-              avatarBox: "w-[48px] h-[48px] hover:opacity-80 transition-opacity duration-200"
+              avatarBox: "w-[48px] h-[48px] hover:opacity-80 transition-all duration-200 hover:ring-2 hover:ring-primary/70 rounded-full"
             }
           }}
         />
