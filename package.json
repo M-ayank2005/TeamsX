@@ -10,10 +10,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "turbo:dev": "turbo dev",
-    "turbo:build": "turbo build",
-    "turbo:start": "turbo start"
+    "lint": "next lint"
   },
   "dependencies": {
     "@clerk/nextjs": "^4.23.2",
