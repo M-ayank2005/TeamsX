@@ -17,6 +17,7 @@ import { Plus, SmileIcon } from "lucide-react"
 import { useModal } from "@/hooks/use-modal-store"
 import { EmojiPicker } from "@/components/emoji-picker"
 import { useRouter } from "next/navigation"
+const sentAudioPath = "/sent.mp3"; 
 
 interface ChatInputProps {
   apiUrl: string
@@ -50,6 +51,11 @@ export const ChatInput = ({ apiUrl, query, name, type }: ChatInputProps) => {
       })
 
       await axios.post(url, values)
+      
+      // Play sound when message is sent successfully
+      const audio = new Audio(sentAudioPath);
+      audio.play().catch(err => console.error("Error playing sound:", err));
+      
       form.reset()
       router.refresh()
     } catch (error) {
