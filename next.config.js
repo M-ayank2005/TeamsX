@@ -23,7 +23,11 @@ const nextConfig = {
     domains: [
       "uploadthing.com",
     ]
-  }
+  },
+  // Disable static optimization for API routes
+  skipTrailingSlashRedirect: true,
+  // Explicitly configure app directory
+  reactStrictMode: true,
 }
 
 module.exports = nextConfig
