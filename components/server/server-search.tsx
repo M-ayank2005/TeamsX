@@ -87,7 +87,7 @@ export const ServerSearch = ({ data }: ServerSearchProps) => {
                 {data.map(({ id, name, icon }) => {
                   return (
                     <CommandItem key={id} onSelect={() => handleSearchOpen({ id, type })}>
-                      {icon}
+                      {icon as any}
                       <span>{name}</span>
                     </CommandItem>
                   );
