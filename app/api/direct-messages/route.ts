@@ -5,9 +5,6 @@ import { currentProfile } from "@/lib/current-profile";
 import { db } from "@/lib/db";
 
 export const dynamic = 'force-dynamic';
-export const revalidate = 0;
-export const fetchCache = 'force-no-store';
-export const runtime = 'nodejs';
 
 const MESSAGES_BATCH = 10 // 10 messages at a time
 
