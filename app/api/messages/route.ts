@@ -4,6 +4,8 @@ import { Message } from "@prisma/client";
 import { currentProfile } from "@/lib/current-profile";
 import { db } from "@/lib/db";
 
+export const dynamic = 'force-dynamic';
+
 const MESSAGES_BATCH = 10 // 10 messages at a time
 
 export async function GET(

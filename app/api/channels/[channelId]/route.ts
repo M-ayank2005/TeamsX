@@ -3,6 +3,8 @@ import { db } from "@/lib/db"
 import { MemberRole } from "@prisma/client"
 import { NextResponse } from "next/server"
 
+export const dynamic = 'force-dynamic';
+
 export async function DELETE(
   req: Request,
   { params }: { params: { channelId: string } }
