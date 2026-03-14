@@ -8,9 +8,6 @@ const nextConfig = {
 
     return config
   },
-  experimental: {
-    serverActions: true,
-  },
   images: {
     remotePatterns: [
       {
@@ -24,9 +21,7 @@ const nextConfig = {
       "uploadthing.com",
     ]
   },
-  // Disable static optimization for API routes
   skipTrailingSlashRedirect: true,
-  // Explicitly configure app directory
   reactStrictMode: true,
 }
 
